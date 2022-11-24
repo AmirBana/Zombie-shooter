@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public float rotSpeed;
     public GameObject bullet;
     public Transform firePos;
-    private ParticleSystem gunFire;
+    public ParticleSystem gunFire;
     public float range;
     public float range2;
     public float fireRate;
@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
         health = initHealth;
         controller = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
-        gunFire = firePos.GetComponentsInChildren<ParticleSystem>()[0];
+        //gunFire = firePos.GetComponentsInChildren<ParticleSystem>()[0];
         StartCoroutine("FireBullet");
         canTakeDmg = true;
         fireRate = 0.3f;

@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI coinTxt;
     public int coins;
     public bool gameOver;
-    public GameObject inGamePanel, gameOverPanel;
+    public GameObject inGamePanel, gameOverPanel, weaponSelectPanel;
     private void Awake()
     {
         if (Instance == null)
@@ -30,12 +30,6 @@ public class GameManager : MonoBehaviour
         inGamePanel.SetActive(true);
         gameOverPanel.SetActive(false);
         gameOver = false;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
     public void StartWave()
     {
@@ -72,5 +66,10 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void OpenWeaponPanel()
+    {
+        Time.timeScale = 0;
+        weaponSelectPanel.SetActive(true);
     }
 }
