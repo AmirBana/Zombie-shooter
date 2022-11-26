@@ -5101,4 +5101,5 @@ MonoBehaviour:
   playerController: {fileID: 0}
   firePos: {fileID: 7177429282267497244}
   bullet: {fileID: 5481131208548253871, guid: 8870efaee4f0fdc4cac6322d1a36ad20, type: 3}
-  range: 5
+  range: 6
+  attackSpeed: 1

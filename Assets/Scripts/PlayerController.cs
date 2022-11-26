@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public float range;
     public float range2;
     public float fireRate;
+    public float gunSpeed;
     public float dmgTimeOut;
     public LayerMask enemyLayer;
     bool doFire;
@@ -81,7 +82,7 @@ public class PlayerController : MonoBehaviour
     {
         while(true)
         {
-            yield return new WaitForSeconds(fireRate);
+            yield return new WaitForSeconds(fireRate*gunSpeed);
             if (doFire)
             {
                 Instantiate(bullet, firePos.position, firePos.rotation);

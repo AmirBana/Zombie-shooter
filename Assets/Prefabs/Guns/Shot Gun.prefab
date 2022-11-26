@@ -14,12 +14,12 @@ GameObject:
   - component: {fileID: 1654034349655949694}
   - component: {fileID: 1654034349655949689}
   m_Layer: 0
-  m_Name: Shut Gun
+  m_Name: Shot Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1649499968272754168
 Transform:
   m_ObjectHideFlags: 0
@@ -27,8 +27,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652822106664494652}
-  m_LocalRotation: {x: 0.026938276, y: -0.06209849, z: -0.0074680955, w: 0.9976785}
-  m_LocalPosition: {x: 0.105, y: 1.163, z: 0.107}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.29395613, y: 0.29395613, z: 0.29395613}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -37,7 +37,7 @@ Transform:
   - {fileID: 1654034348733169165}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 3.028, y: -7.151, z: -1.047}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1621784655048794712
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -109,6 +109,7 @@ MonoBehaviour:
   firePos: {fileID: 1654034348733169165}
   bullet: {fileID: 422282902958093570, guid: 4bc417838c5b445498b16ac1732b3aea, type: 3}
   range: 4
+  attackSpeed: 3
 --- !u!114 &1654034349655949689
 MonoBehaviour:
   m_ObjectHideFlags: 0

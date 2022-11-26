@@ -12,6 +12,7 @@ public class GunController : MonoBehaviour
     public Transform firePos;
     public GameObject bullet;
     public float range;
+    public float attackSpeed;
     void Start()
     {
         
@@ -27,6 +28,7 @@ public class GunController : MonoBehaviour
         playerController.firePos = firePos;
         playerController.bullet = bullet;
         playerController.range = range;
+        playerController.gunSpeed = attackSpeed;
         playerController.gunFire = firePos.GetComponentsInChildren<ParticleSystem>()[0];
         twoBoneIKConstraint_right.data.target = rightHand;
         twoBoneIKConstraint_left.data.target = leftHand;
