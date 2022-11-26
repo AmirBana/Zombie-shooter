@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1649499968272754168
 Transform:
   m_ObjectHideFlags: 0
@@ -108,6 +108,7 @@ MonoBehaviour:
   playerController: {fileID: 0}
   firePos: {fileID: 1654034348733169165}
   bullet: {fileID: 422282902958093570, guid: 4bc417838c5b445498b16ac1732b3aea, type: 3}
+  range: 4
 --- !u!114 &1654034349655949689
 MonoBehaviour:
   m_ObjectHideFlags: 0
