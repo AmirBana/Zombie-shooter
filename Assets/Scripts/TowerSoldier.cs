@@ -16,17 +16,28 @@ public class TowerSoldier : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-            EnemyDetect();
+        EnemyDetect();
     }
     void EnemyDetect()
     {
         Collider[] enemies = Physics.OverlapSphere(transform.position, range, enemyLayer);
+        float distance = 1000f;
+        Collider enemy=null;
+
         if (enemies.Length <= 0) doFire = false;
         if (enemies.Length > 0)
         {
-            Collider enemy = enemies[0];
+            for (int i = 0; i < enemies.Length; i++)
+            {
+                float tempDistance = Vector3.Distance(transform.position, enemies[i].transform.position);
+                if (tempDistance < distance)
+                {
+                    distance = tempDistance;
+                    enemy = enemies[i];
+                }
+            }
             transform.LookAt(new Vector3(enemy.transform.position.x, transform.position.y, enemy.transform.position.z));
             firePos.LookAt(enemy.transform.position);
             doFire = true;

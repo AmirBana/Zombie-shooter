@@ -93,10 +93,19 @@ public class PlayerController : MonoBehaviour
     void EnemyDetect()
     {
         Collider[] enemies = Physics.OverlapSphere(transform.position, range, enemyLayer);
-       // Collider[] enemies2 = Physics.OverlapSphere(transform.position, range2, enemyLayer);
+        float distance = 1000f;
+        Collider enemy = null;
         if (enemies.Length > 0)
         {
-            Collider enemy = enemies[0];
+            for (int i = 0; i < enemies.Length; i++)
+            {
+                float tempDistance = Vector3.Distance(transform.position, enemies[i].transform.position);
+                if (tempDistance < distance)
+                {
+                    distance = tempDistance;
+                    enemy = enemies[i];
+                }
+            }
             Vector3 forward = enemy.transform.position - transform.position;
             forward.y = 0;
             doFire = true;
