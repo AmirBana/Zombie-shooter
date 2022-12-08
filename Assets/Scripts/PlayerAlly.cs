@@ -40,6 +40,22 @@ public class PlayerAlly : MonoBehaviour
     {
         EnemyDetect();
     }
+    private bool WallDetect()
+    {
+        RaycastHit hit;
+        if(Physics.Raycast(firePos.transform.position,Vector3.forward,out hit,Mathf.Infinity))
+        {
+            if(hit.transform.name.Contains("Wall"))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        return true;
+    }
     private void EnemyDetect()
     {
         Collider[] enemies = Physics.OverlapSphere(transform.position, range, enemyLayer);
@@ -59,7 +75,7 @@ public class PlayerAlly : MonoBehaviour
             }
             Vector3 forward = enemy.transform.position - transform.position;
             forward.y = 0;
-            doFire = true;
+            doFire = WallDetect();
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(forward), timeCount + Time.deltaTime * rotSpeed);
         }
     }

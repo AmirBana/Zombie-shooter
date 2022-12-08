@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 823981036752556974}
   - component: {fileID: 6741733300189432276}
-  - component: {fileID: 929403016057408859}
   - component: {fileID: 1231847087854481467}
   - component: {fileID: 1231847087854481463}
+  - component: {fileID: 495097135}
   - component: {fileID: 1626607724115988967}
   - component: {fileID: 1626607724115988973}
   m_Layer: 0
@@ -31,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 10290122091858196}
   m_LocalRotation: {x: 0, y: 0.07713663, z: 0, w: 0.99702054}
   m_LocalPosition: {x: -0.04799533, y: 0.00000047683716, z: 2.328663}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.77, y: 0.77, z: 0.77}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3681307092286438911}
   - {fileID: 5133836048643994426}
@@ -65,24 +65,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!143 &929403016057408859
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 10290122091858196}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 1.79
-  m_Radius: 0.35
-  m_SlopeLimit: 0
-  m_StepOffset: 0
-  m_SkinWidth: 0.035
-  m_MinMoveDistance: 0.001
-  m_Center: {x: -0.09, y: 0.87, z: 0.09}
 --- !u!114 &1231847087854481467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,6 +155,19 @@ MonoBehaviour:
   - {fileID: 2629083253662057566}
   - {fileID: 6154584673326138603}
   - {fileID: 3818051542501146941}
+--- !u!135 &495097135
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10290122091858196}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &1626607724115988967
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1180,7 +1175,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9313bcc2ba6372348926c9aee1f61061, type: 2}
+  - {fileID: 2100000, guid: 7a32ecbada3f56e468e3425b576a6285, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
