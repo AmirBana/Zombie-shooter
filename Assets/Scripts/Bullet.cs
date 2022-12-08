@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemy") || other.CompareTag("zombieEnter") || other.CompareTag("DeadEnemy") || other.CompareTag("Bullet")){ }
+        if (other.CompareTag("Enemy") || other.CompareTag("zombieEnter") || other.CompareTag("DeadEnemy") || other.CompareTag("Bullet") || other.CompareTag("player") || other.CompareTag("Ally")){ }
         else Destroy(gameObject);
     }
 }

@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - zombieEnter
   - DeadEnemy
+  - Ally
   layers:
   - Default
   - TransparentFX
