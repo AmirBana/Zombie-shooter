@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
     }
     private void Update()
     {
-
+        Debug.DrawRay(firePos.position, firePos.forward, Color.red);
     }
     private void FixedUpdate()
     {
@@ -93,7 +93,7 @@ public class PlayerController : MonoBehaviour
     private bool WallDetect()
     {
         RaycastHit hit;
-        if (Physics.Raycast(firePos.transform.position, Vector3.forward, out hit, Mathf.Infinity))
+        if (Physics.Raycast(firePos.transform.position, firePos.forward, out hit, 60))
         {
             if (hit.transform.name.Contains("Wall"))
             {

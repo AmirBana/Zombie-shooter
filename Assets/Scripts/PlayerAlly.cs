@@ -43,7 +43,7 @@ public class PlayerAlly : MonoBehaviour
     private bool WallDetect()
     {
         RaycastHit hit;
-        if(Physics.Raycast(firePos.transform.position,Vector3.forward,out hit,Mathf.Infinity))
+        if(Physics.Raycast(firePos.transform.position,firePos.forward,out hit,Mathf.Infinity))
         {
             if(hit.transform.name.Contains("Wall"))
             {

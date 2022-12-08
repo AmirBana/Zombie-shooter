@@ -205,7 +205,7 @@ MonoBehaviour:
   bullet: {fileID: 5481131208548253871, guid: 8870efaee4f0fdc4cac6322d1a36ad20, type: 3}
   firePos: {fileID: 1626607724118953087}
   range: 6
-  fireRate: 0.2
+  fireRate: 0.4
   enemyLayer:
     serializedVersion: 2
     m_Bits: 8
