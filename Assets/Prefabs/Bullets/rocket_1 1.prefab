@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6480363547093915574}
   - component: {fileID: 3059039082986381582}
   - component: {fileID: 5294584190272314481}
+  - component: {fileID: -8513715329772199791}
   - component: {fileID: 3533118336011812910}
   - component: {fileID: 4374551109691768113}
-  - component: {fileID: -8513715329772199791}
   m_Layer: 0
   m_Name: rocket_1 1
   m_TagString: Bullet
@@ -103,6 +103,19 @@ MonoBehaviour:
   speed: 15
   lifeTime: 2
   damage: 2
+--- !u!114 &-8513715329772199791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5809823269168808164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 143522e481164e84689a591f23df0fda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explotion: {fileID: 425967560074063971, guid: 5c4d029ec10fe534ba13a988ffed92a2, type: 3}
 --- !u!54 &3533118336011812910
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -132,19 +145,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.41066653, y: 0.41066664, z: 2.5039659}
   m_Center: {x: -0.0016397536, y: 0.004066892, z: 0.058149576}
---- !u!114 &-8513715329772199791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5809823269168808164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 143522e481164e84689a591f23df0fda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explotion: {fileID: 425967560074063971, guid: 5c4d029ec10fe534ba13a988ffed92a2, type: 3}
 --- !u!1001 &3204942678742952258
 PrefabInstance:
   m_ObjectHideFlags: 0

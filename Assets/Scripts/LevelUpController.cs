@@ -7,7 +7,7 @@ using TMPro;
 public class LevelUpController : MonoBehaviour
 {
     public PlayerController playerController;
-    public Bullet bullet;
+    public Bullet[] bullets;
     public TextMeshProUGUI fireLevelTxt;
     public TextMeshProUGUI damageLevelTxt;
     int fireLevel,damageLevel;
@@ -36,7 +36,10 @@ public class LevelUpController : MonoBehaviour
     }
     public void DamgeUp()
     {
-        bullet.damage += 1;
+        foreach(var bullet in bullets)
+        {
+            bullet.damage += 1;
+        }
         GameManager.Instance.RemoveCoin((damageCoin * damageLevel));
         damageLevel++;
         damageLevelTxt.text = "Damage "+damageLevel+'\n'+(damageCoin*damageLevel).ToString();

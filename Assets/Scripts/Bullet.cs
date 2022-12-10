@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour
     public float speed;
     public float lifeTime;
     public int damage;
+    public int baseDamage;
     void Start()
     {
         StartCoroutine("LifeTime"); 
@@ -21,7 +22,7 @@ public class Bullet : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemy") || other.CompareTag("zombieEnter") || other.CompareTag("DeadEnemy") || other.CompareTag("Bullet") || other.CompareTag("player") || other.CompareTag("Ally")){ }
+        if (other.CompareTag("Enemy") || other.CompareTag("zombieEnter") || other.CompareTag("DeadEnemy") || other.CompareTag("Bullet") || other.CompareTag("Player") || other.CompareTag("Ally")){ }
         else Destroy(gameObject);
     }
 }
