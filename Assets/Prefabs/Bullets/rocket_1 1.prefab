@@ -116,6 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explotion: {fileID: 425967560074063971, guid: 5c4d029ec10fe534ba13a988ffed92a2, type: 3}
+  bombRange: 2
 --- !u!54 &3533118336011812910
 Rigidbody:
   m_ObjectHideFlags: 0

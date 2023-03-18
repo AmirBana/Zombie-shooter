@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5167661691152143269
+--- !u!1 &6657872660565754755
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,52 +8,52 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5167661691152143257}
-  - component: {fileID: 5167661691152143256}
-  - component: {fileID: 5167661691152143259}
-  - component: {fileID: 5167661691152143258}
-  - component: {fileID: 5167661691152143262}
-  - component: {fileID: 5167661691152143260}
-  - component: {fileID: 5167661691152143263}
+  - component: {fileID: 6657872660565754815}
+  - component: {fileID: 6657872660565754814}
+  - component: {fileID: 6657872660565754813}
+  - component: {fileID: 6657872660565754812}
+  - component: {fileID: 6657872660565754808}
+  - component: {fileID: 6657872660565754810}
+  - component: {fileID: 6657872660565754809}
   m_Layer: 3
-  m_Name: Enemy (1)
+  m_Name: Enemy 2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5167661691152143257
+--- !u!4 &6657872660565754815
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5167661691152143269}
+  m_GameObject: {fileID: 6657872660565754755}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.19, y: 3.33, z: -1.04}
+  m_LocalPosition: {x: -9.07055, y: 1.71, z: -1.5610247}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7519840638046654725}
-  - {fileID: 4247373133862202958}
+  - {fileID: 8325304351364694307}
+  - {fileID: 2387761409140129384}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5167661691152143256
+--- !u!33 &6657872660565754814
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5167661691152143269}
+  m_GameObject: {fileID: 6657872660565754755}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &5167661691152143259
+--- !u!23 &6657872660565754813
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5167661691152143269}
+  m_GameObject: {fileID: 6657872660565754755}
   m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -89,13 +89,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &5167661691152143258
+--- !u!136 &6657872660565754812
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5167661691152143269}
+  m_GameObject: {fileID: 6657872660565754755}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
@@ -103,13 +103,13 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!195 &5167661691152143262
+--- !u!195 &6657872660565754808
 NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5167661691152143269}
+  m_GameObject: {fileID: 6657872660565754755}
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.41
@@ -125,13 +125,13 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!54 &5167661691152143260
+--- !u!54 &6657872660565754810
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5167661691152143269}
+  m_GameObject: {fileID: 6657872660565754755}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -141,13 +141,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
---- !u!114 &5167661691152143263
+--- !u!114 &6657872660565754809
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5167661691152143269}
+  m_GameObject: {fileID: 6657872660565754755}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a70ee96a08ac3041aa37bbb6be9cb78, type: 3}
@@ -155,18 +155,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorTarget: {fileID: 0}
   playerTarget: {fileID: 0}
-  life: 5
+  life: 10
   enemyList: {fileID: 0}
   killPrice: 10
   enemyDeadMat: {fileID: 2100000, guid: d8dd0b61706498747946af56bf3b0565, type: 2}
-  model: {fileID: 6901459033197805079}
-  blood: {fileID: 4062066363195762042}
---- !u!1001 &4242554998358576520
+  model: {fileID: 4905637606863171121}
+  blood: {fileID: 2561950950089733468}
+--- !u!1001 &2392025265995947438
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 5167661691152143257}
+    m_TransformParent: {fileID: 6657872660565754815}
     m_Modifications:
     - target: {fileID: 1489431029902184, guid: 4430919f14c50f84085d287cbcb2c30e, type: 3}
       propertyPath: m_Name
@@ -242,22 +242,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4430919f14c50f84085d287cbcb2c30e, type: 3}
---- !u!198 &4062066363195762042 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 198104090543139058, guid: 4430919f14c50f84085d287cbcb2c30e, type: 3}
-  m_PrefabInstance: {fileID: 4242554998358576520}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &4247373133862202958 stripped
+--- !u!4 &2387761409140129384 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4826957403153350, guid: 4430919f14c50f84085d287cbcb2c30e, type: 3}
-  m_PrefabInstance: {fileID: 4242554998358576520}
+  m_PrefabInstance: {fileID: 2392025265995947438}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &8057342474880562926
+--- !u!198 &2561950950089733468 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198104090543139058, guid: 4430919f14c50f84085d287cbcb2c30e, type: 3}
+  m_PrefabInstance: {fileID: 2392025265995947438}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8359759871841019592
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 5167661691152143257}
+    m_TransformParent: {fileID: 6657872660565754815}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 6243ba584ed9f644c8d560e7aee14d48, type: 3}
       propertyPath: m_RootOrder
@@ -306,7 +306,7 @@ PrefabInstance:
     - target: {fileID: -4982683279927427268, guid: 6243ba584ed9f644c8d560e7aee14d48, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: c90e2a3bb3ca4874d9970c09122c8a1c, type: 2}
+      objectReference: {fileID: 2100000, guid: 790f6f14a2efd9a458ea759db684eccd, type: 2}
     - target: {fileID: 919132149155446097, guid: 6243ba584ed9f644c8d560e7aee14d48, type: 3}
       propertyPath: m_Name
       value: Rifle Aiming Idle
@@ -325,13 +325,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6243ba584ed9f644c8d560e7aee14d48, type: 3}
---- !u!1 &6901459033197805079 stripped
+--- !u!1 &4905637606863171121 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3465385937281108217, guid: 6243ba584ed9f644c8d560e7aee14d48, type: 3}
-  m_PrefabInstance: {fileID: 8057342474880562926}
+  m_PrefabInstance: {fileID: 8359759871841019592}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &7519840638046654725 stripped
+--- !u!4 &8325304351364694307 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6243ba584ed9f644c8d560e7aee14d48, type: 3}
-  m_PrefabInstance: {fileID: 8057342474880562926}
+  m_PrefabInstance: {fileID: 8359759871841019592}
   m_PrefabAsset: {fileID: 0}

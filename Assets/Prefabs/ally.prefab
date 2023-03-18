@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85bf6768d5e9bd4458198402b028d9de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 5481131208548253871, guid: 8870efaee4f0fdc4cac6322d1a36ad20, type: 3}
+  bullet: {fileID: 5481131208548253871, guid: ddb334128035fa84e8cbab6f2f88cec4, type: 3}
   firePos: {fileID: 1626607724118953087}
   range: 6
   fireRate: 0.4

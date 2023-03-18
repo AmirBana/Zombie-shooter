@@ -6,7 +6,6 @@ public class Bullet : MonoBehaviour
     public float speed;
     public float lifeTime;
     public int damage;
-    public int baseDamage;
     void Start()
     {
         StartCoroutine("LifeTime"); 

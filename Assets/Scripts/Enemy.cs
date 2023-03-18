@@ -47,33 +47,33 @@ public class Enemy : MonoBehaviour
     {   if (gameObject.CompareTag("DeadEnemy")) return;
         if(other.CompareTag("Bullet"))
         {
-            life -= other.gameObject.GetComponent<Bullet>().damage;
+            life -= other.gameObject.GetComponent<Bullet>().damage; 
+            Destroy(other.gameObject);
             blood.Play();
             print(life);
-            Destroy(other.gameObject);
             if (life <= 0)
             {
                 if(gameObject.CompareTag("Enemy"))
                 {
-                    anim.SetBool("Death", true);
-                    gameObject.tag = "DeadEnemy";
-                    gameObject.layer = 0;
-                    gameObject.GetComponent<Rigidbody>().isKinematic = true;
-                    agent.isStopped = true;
-                    model.GetComponent<SkinnedMeshRenderer>().material = enemyDeadMat;
-                    enemyList.allEnemies.Remove(this);
-                    if (enemyList.allEnemies.Count == 0)
-                    {
-                        GameManager.Instance.WaveFinished();
-                    }
-                    GameManager.Instance.AddCoin(killPrice);
-                    Invoke("PlayerDeath", 2f);
+                    PlayerDeath();
                 }
             }
         }
     }
     void PlayerDeath()
     {
-        Destroy(gameObject);
+        anim.SetBool("Death", true);
+        gameObject.tag = "DeadEnemy";
+        gameObject.layer = 0;
+        gameObject.GetComponent<Rigidbody>().isKinematic = true;
+        agent.isStopped = true;
+        model.GetComponent<SkinnedMeshRenderer>().material = enemyDeadMat;
+        enemyList.allEnemies.Remove(this);
+        if (enemyList.allEnemies.Count == 0)
+        {
+            GameManager.Instance.WaveFinished();
+        }
+        GameManager.Instance.AddCoin(killPrice);
+        Destroy(gameObject, 2f);
     }
 }
